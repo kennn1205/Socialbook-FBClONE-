@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="./images/fv.png" type="image/x-icon">
+    <title>Socialbook</title>
+</head>
+
+<body class="bg-gray">
+    <!-- login -->
+    <div class="container d-flex flex-column flex-lg-row justify-content-evenly mt-5 pt-5">
+        <!-- heading -->
+        <div class="text-center text-lg-start mt-lg-5 pt-lg-5">
+            <h1 class="text-primary fw-bold fs-0">Socialbook</h1>
+            <p class="w-75 mx-auto mx-lg-0 fs-4">
+                Socialbook giúp bạn kết nối và chia sẻ với mọi người trong cuộc sống của bạn. </p>
+        </div>
+        <!-- form -->
+        <div style="max-width: 28rem; width:100%;">
+            <div class="bg-white shadow rounded p-3 input-group-lg">
+                <input type="email" class="form-control my-3" placeholder="Địa chỉ Email hoặc Số điện thoại">
+                <input type="password" class="form-control my-3" placeholder="Mật Khẩu">
+                <a href="feed.html">
+                    <button class="btn btn-primary w-100 my-3">Đăng Nhập</button>
+                </a>
+                <a href="#" class="text-decoration-none text-center">
+                    <p>Quên mật khẩu ?</p>
+                </a>
+                <!-- create form -->
+                <hr>
+                <div class="text-center my-4">
+                    <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#CreateModal">Tạo tài
+                        khoản mới</button>
+                </div>
+                <!-- Create modal -->
+                <div class="modal fade" id="CreateModal" tabindex="-1" aria-labelledby="CreateModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- đầu -->
+                            <div class="modal-header">
+                                <div>
+                                    <h2 class="modal-title fs-5" id="CreateModalLabel">Đăng ký</h2>
+                                    <p class="text-muted fs-7">Nhanh chóng và dễ dàng.</p>
+                                </div>
+                            </div>
+                            <!-- thân -->
+                            <div class="modal-body">
+                                <form>
+                                    <!-- tên -->
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Họ">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Tên">
+                                        </div>
+                                    </div>
+                                    <!-- mail & pass -->
+                                    <input type="email" class="form-control my-3" placeholder="Số di dộng hoặc email">
+                                    <input type="password" class="form-control my-3" placeholder="Mật khẩu mới">
+                                    <!-- ngày sinh -->
+                                    <div class="row my-3">
+                                        <span class="text-muted fs-7">Sinh nhật <i class="fas fa-question-circle"
+                                                data-bs-toggle="popover" 
+                                                data-bs-content="Cung cấp sinh nhật của bạn giúp đảm bảo bạn có được trải nghiệm với web phù hợp với độ tuổi của mình."></i></span>
+                                        <div class="col">
+                                            <select class="form-select">
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <select class="form-select">
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <select class="form-select">
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- giới tính -->
+                                    <div class="row my-3">
+                                        <span class="text-muted fs-7">Giới tính <i class="fas fa-question-circle"
+                                                data-bs-toggle="popover" 
+                                                data-bs-content="Bạn có thể thay đổi ai nhìn thấy giới tính của mình trên trang cá nhân vào lúc khác. Chọn Tùy chỉnh nếu bạn thuộc giới tính khác hoặc không muốn tiết lộ."></i>
+                                        </span>
+                                        <div class="col">
+                                            <div class="border rounded p-2">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Nữ
+                                                </label>
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault1"/>
+
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="border rounded p-2">
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    Nam
+                                                </label>
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault2"/>
+
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="border rounded p-2">
+                                                <label class="form-check-label" for="flexRadioDefault3">
+                                                    Tùy chỉnh
+                                                </label>
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault3"/>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- lựa chon  -->
+                                    <div class="d-none" id="genderSelect">
+                                        <select class="form-select">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                        <div class="my-3">
+                                            <span class="text-muted fs-7">Hiển thị với tất cả mn</span>
+                                            <input type="text" class="form-control"
+                                                placeholder="Giới tính(không bắt buộc)">
+                                        </div>
+                                    </div>
+                                    <!-- lựa chon  -->
+                                    <span class="text-muted fs-7">Những người dùng dịch vụ của chúng tôi có thể đã tải
+                                        thông tin liên hệ của bạn lên Socialbook.</span>
+                                    <!-- btn  -->
+                                    <div class="text-center mt-3">
+                                        <button type="button" class="btn btn-success bt-lg" data-bs-dismiss="modal">Đăng
+                                            ký</button>
+                                    </div>
+                                </form>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
+            </div>
+            <!-- tag -->
+            <div class="my-5 pb-5 text-center">
+                <p class="fw-bold"><a href="#" class="text-decoration-none text-dark">Tạo trang</a>
+                    <span class="fw-normal">dành cho người nổi tiếng, thương hiệu hoặc doanh
+                        nghiệp.</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-white p-4 text-muted">
+        <div class="container">
+          <!-- language -->
+          <div class="d-flex flex-wrap">
+            <p class="mx-2 fs-7 mb-0"><a href="#">Tiếng Việt</a></p>
+            <p class="mx-2 fs-7 mb-0">English (US)</p>
+            <p class="mx-2 fs-7 mb-0">中文(台灣)</p>
+            <p class="mx-2 fs-7 mb-0">한국어</p>
+            <p class="mx-2 fs-7 mb-0">日本語</p>
+          </div>
+          <hr />
+          <!-- actions -->
+          <div class="d-flex flex-wrap">
+            <p class="mx-2 fs-7 mb-0">Sign Up</p>
+            <p class="mx-2 fs-7 mb-0">Login</p>
+            <p class="mx-2 fs-7 mb-0">Messenger</p>
+            <p class="mx-2 fs-7 mb-0">Facebook Lite</p>
+            <p class="mx-2 fs-7 mb-0">Watch</p>
+          </div>
+          <!-- copy -->
+          <div class="mt-4 mx-2">
+            <p class="fs-7">Socialbook &copy; 2023  By:duongtran120504@gmail.com</p>
+          </div>
+        </div>
+      </footer>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!-- main js -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
